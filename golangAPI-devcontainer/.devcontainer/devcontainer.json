@@ -1,0 +1,14 @@
+// For more information, see https://containers.dev/guide
+{
+    "name": "Go API DevContainer",
+    "image": "mcr.microsoft.com/devcontainers/go:1.21",
+    "features": {},
+    "forwardPorts": [8080],
+    "postCreateCommand": "go mod tidy",
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": ["golang.Go"]
+        }
+    }
+}
