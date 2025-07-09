@@ -1,0 +1,17 @@
+{
+  "name": "devcontainer-multicontainer",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "frontend",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "golang.Go"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install --prefix ../app-frontend"
+}
