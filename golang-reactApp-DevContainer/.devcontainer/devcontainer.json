@@ -1,0 +1,7 @@
+{
+  "name": "Go + React DevContainer",
+  "dockerFile": "Dockerfile",
+  "appPort": [8080, 5173],
+  "settings": {},
+  "postCreateCommand": "cd backend && go mod tidy && cd ../frontend && npm install"
+}
